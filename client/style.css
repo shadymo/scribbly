@@ -1,18 +1,46 @@
 body{
-    margin: 0;
+     margin: 0;
     padding: 0;
+}
+
+#wrapper{
     display: flex;
     flex-direction: column;
+    background-image: url('./assets/background.jpg');
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+}
+#top{
+    display: flex;
+
+    justify-content: space-evenly;
+    
+}
+#test{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
-    justify-content: space-between;
+    width: 600px;
+}
+#readyCheck{
+    display: none;
+}
+#canvasHolder{
+    display: flex;
+    justify-content: space-evenly;
 }
 #userHolder{
-    border: 1px solid black;
-    height: 30vh;
-    width: 40vw;
+    height: 200px;
+    width: 300px;
 }
-#drawArea{
-    border: 1px solid red;
-    height: 40vh;
-    width: 40vw;
+#canvas{
+    border: 3px solid black;
+    background-color: white;
+}
+.username{
+    color: antiquewhite;
+    border-bottom: 1px snow solid;
+    width: fit-content;
 }

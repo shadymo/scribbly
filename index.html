@@ -8,15 +8,33 @@
     <script src="http://localhost:3000/socket.io/socket.io.js"></script>
 </head>
 <body>
-    <div id="main">
-        <input type="text" id="nameInput"> 
-        <button id="nameSubmit">Enter</button>
-    </div>
-    <div id="userHolder">
+    <div id="wrapper">
 
-    </div>
-    <div id="drawArea">
-        <canvas></canvas>
+        <div id="top" class="section">
+            <div id="test">
+                <div id="readyCheck">
+                    <button id="readyBTN">Ready Up</button>
+                </div>
+                <div id="signIn">
+                    <input type="text" id="nameInput"> 
+                    <button id="nameSubmit">Enter</button>
+                </div>
+                <button id="changeState">change</button>
+                <p id="state"></p>
+                <div id="userHolder" class="container">
+
+                </div>
+    
+            </div>
+    
+        </div>
+
+        <div id="bottom" class="section"></div>
+            <div id="canvasHolder">
+                <canvas id="canvas" class="container"></canvas>
+            </div>
+        </div>
+
     </div>
     <script src="./client/state.js"></script>
     <script src="./client/main.js"></script>

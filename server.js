@@ -13,5 +13,11 @@ io.on('connection', (socket) =>{
         delete users[socket.id]
         console.log(users)
     })
+    socket.on('drawing', (pos) =>{
+        io.emit('elseDraw', pos)
+    })
+    socket.on('newStart', (pos) =>{
+        io.emit('updateStart', pos)
+    })
 });
 
