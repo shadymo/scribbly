@@ -2,7 +2,7 @@
 
 
 //connect to socket io server
-const socket = io('http://localhost:3000');
+const socket = io('http://shadyserver.herokuapp.com:3000');
 
 //initializeDOM Constants
 //===================================================
